@@ -116,6 +116,13 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# custom path variables for react native setup
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 # custom settings:
 function meh()  { cd ~/Documents/meh/ && ls -al --group-directories-first; }
 function pratham_lms()  { cd ~/Documents/pratham_lms/ && ls -al --group-directories-first; }
