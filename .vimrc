@@ -76,7 +76,11 @@ set nohlsearch
 set relativenumber
 "------------------
 "The scrolloff option helps to keep context
-set scrolloff=5
+"This option possibly causes problem while redrawing the screen when searching
+"and hitting the bottom
+"set scrolloff=5
+"------------------
+"------------------
 "set scrolloff&
 "------------------
 "------------------
