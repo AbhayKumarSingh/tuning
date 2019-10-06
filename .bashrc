@@ -124,20 +124,20 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # custom settings:
-function meh()  { cd ~/Documents/meh/ && ls -al --group-directories-first; }
-function pratham_lms()  { cd ~/Documents/pratham_lms/ && ls -al --group-directories-first; }
-function bscacademy()  { cd ~/Documents/bscacademy/ && ls -al --group-directories-first; }
-function mgcrm()  { cd ~/Documents/mgcrm/ && ls -al --group-directories-first; }
-function wind()  { cd ~/Documents/wind/ && ls -al --group-directories-first; }
-function blog()  { cd ~/Documents/test/blog/ && ls -al --group-directories-first; }
-function edims() { cd ~/Documents/sankisaini-edims/edims/ && ls -al --group-directories-first;}
-function Docs() { cd ~/Documents/ && ls -al --group-directories-first;}
-function r() { cd / && ls -al --group-directories-first; }
-function h() { cd ~ && ls -al --group-directories-first; }
-function d() { cd "$@" && ls -al --group-directories-first; }
-function ..() { cd .. && ls -al --group-directories-first; }
+function meh()  { cd ~/Documents/meh/ && ls -a --group-directories-first; }
+function pratham_lms()  { cd ~/Documents/pratham_lms/ && ls -a --group-directories-first; }
+function bscacademy()  { cd ~/Documents/bscacademy/ && ls -a --group-directories-first; }
+function mgcrm()  { cd ~/Documents/mgcrm/ && ls -a --group-directories-first; }
+function wind()  { cd ~/Documents/wind/ && ls -a --group-directories-first; }
+function blog()  { cd ~/Documents/test/blog/ && ls -a --group-directories-first; }
+function edims() { cd ~/Documents/sankisaini-edims/edims/ && ls -a --group-directories-first;}
+function Docs() { cd ~/Documents/ && ls -a --group-directories-first;}
+function r() { cd / && ls -a --group-directories-first; }
+function h() { cd ~ && ls -a --group-directories-first; }
+function d() { cd "$@" && ls -a --group-directories-first; }
+function ..() { cd .. && ls -a --group-directories-first; }
 
-alias lg="ls -al --group-directories-first"
+alias lg="ls -a --group-directories-first"
 alias ser="php artisan serve"
 alias serb="php artisan serve > /dev/null 2>&1 &"
 
