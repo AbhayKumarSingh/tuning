@@ -123,23 +123,26 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-# custom settings:
-function meh()  { cd ~/Documents/meh/ && ls -a --group-directories-first; }
-function pratham_lms()  { cd ~/Documents/pratham_lms/ && ls -a --group-directories-first; }
-function bscacademy()  { cd ~/Documents/bscacademy/ && ls -a --group-directories-first; }
-function mgcrm()  { cd ~/Documents/mgcrm/ && ls -a --group-directories-first; }
-function wind()  { cd ~/Documents/wind/ && ls -a --group-directories-first; }
-function blog()  { cd ~/Documents/test/blog/ && ls -a --group-directories-first; }
-function edims() { cd ~/Documents/sankisaini-edims/edims/ && ls -a --group-directories-first;}
-function Docs() { cd ~/Documents/ && ls -a --group-directories-first;}
-function r() { cd / && ls -a --group-directories-first; }
-function h() { cd ~ && ls -a --group-directories-first; }
-function d() { cd "$@" && ls -a --group-directories-first; }
-function ..() { cd .. && ls -a --group-directories-first; }
+alias lg="ls -aF --group-directories-first"
+function d() { command cd "$@" && lg ; }
 
-alias lg="ls -a --group-directories-first"
+# custom settings:
+function meh()  { d ~/Documents/meh/ ; }
+function pratham_lms()  { d ~/Documents/pratham_lms/ ; }
+function bscacademy()  { d ~/Documents/bscacademy/ ; }
+function mgcrm()  { d ~/Documents/mgcrm/ ; }
+function wind()  { d ~/Documents/wind/ ; }
+function blog()  { d ~/Documents/test/blog/ ; }
+function edims() { d ~/Documents/sankisaini-edims/edims/ ; }
+function Docs() { d ~/Documents/ ; }
+function r() { d / ; }
+function h() { d ~ ; }
+function ..() { d .. ; }
+
+alias llg="ls -alF --group-directories-first"
 alias ser="php artisan serve"
 alias serb="php artisan serve > /dev/null 2>&1 &"
+alias addr="ifconfig | grep inet"
 
 alias gst="git status"
 alias ga="git add"
@@ -151,6 +154,21 @@ alias glgr="gl --oneline --decorate --graph --all"
 alias gd="git diff"
 alias gf="git fetch"
 alias gm="git merge"
+
+if [ -f "/usr/share/bash-completion/completions/git" ]; then
+  source /usr/share/bash-completion/completions/git
+  __git_complete gst _git_status
+  __git_complete ga _git_add
+  __git_complete gb _git_branch
+  __git_complete gc _git_commit
+  __git_complete gch _git_checkout
+  __git_complete gl _git_log
+  __git_complete gd _git_diff
+  __git_complete gf _git_fetch
+  __git_complete gm _git_merge
+else
+  echo "Error loading git completions"
+fi
 
 alias pgrep="ps -e | grep"
 
