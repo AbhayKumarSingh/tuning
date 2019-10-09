@@ -73,7 +73,7 @@ let &guicursor = substitute(&guicursor, 'n-v-c:', '&blinkon0-', '')
 set cursorline
 set nohlsearch
 "set nu
-set relativenumber
+"set relativenumber
 "------------------
 "The scrolloff option helps to keep context
 "This option possibly causes problem while redrawing the screen when searching
