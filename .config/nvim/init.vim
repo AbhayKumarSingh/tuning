@@ -46,7 +46,7 @@ let g:ale_sign_column_always = 1
 
 " grepper-config
 let g:grepper       = {}
-let g:grepper.tools = ['grep', 'git', 'rg']
+let g:grepper.tools = ['rg', 'grep', 'git']
 
 " Search for the current word
 nnoremap <Leader>* :Grepper -cword -noprompt<CR>
