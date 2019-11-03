@@ -68,3 +68,11 @@ nnoremap <Leader>G :Grepper -tool rg<CR>
 
 " Set execution strategy of vim-test to dispatch
 let test#strategy = "dispatch"
+
+" Set escape as shortcut for escaping terminal mode.
+" Also map verbatim escape to force actual escape.
+if has('nvim')
+  tnoremap <Esc> <C-\><C-n>
+  tnoremap <C-v><Esc> <Esc>
+endif
+
