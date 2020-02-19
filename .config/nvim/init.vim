@@ -6,8 +6,8 @@ source ~/.vimrc
 "Remember to comment the next two lines when installing
 "dracula plugin for the first time. And once installed
 "uncomment those lines. Todo: manage this automatically
-packadd! my-dracula-theme
-colorscheme dracula
+"packadd! my-dracula-theme
+"colorscheme dracula
 set guifont=Consolas:h12
 
 packadd minpac
