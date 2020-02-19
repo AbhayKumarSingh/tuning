@@ -55,6 +55,7 @@ set showcmd
 
 if has('mouse')
     set mouse=nv
+    nnoremap <silent> <2-LeftMouse> :let @/='\V\<'.escape(expand('<cword>'), '\').'\>'<cr>:set hls<cr>
 endif
 
 set history=1000
