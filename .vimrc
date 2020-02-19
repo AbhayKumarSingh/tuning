@@ -52,7 +52,11 @@ set ruler
 "set viminfo+=n$VIM/_viminfo
 "set noerrorbells
 set showcmd
-"set mouse=a
+
+if has('mouse')
+    set mouse=nv
+endif
+
 set history=1000
 set undolevels=1000
 set noerrorbells visualbell t_vb=
