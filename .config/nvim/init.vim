@@ -20,7 +20,15 @@ call minpac#add( 'tpope/vim-fugitive' )
 call minpac#add( 'airblade/vim-gitgutter' )
 call minpac#add( 'tpope/vim-scriptease', { 'type' : 'opt' })
 call minpac#add( 'k-takata/minpac' , { 'type' : 'opt' })
-call minpac#add( 'dracula/vim', { 'name' : 'my-dracula-theme'})
+call minpac#add( 'vim-airline/vim-airline')
+call minpac#add( 'junegunn/fzf', { 'do' : { -> fzf#install()}})
+call minpac#add( 'junegunn/fzf.vim')
+call minpac#add( 'gruvbox-community/gruvbox')
+" call minpac#add( 'dracula/vim', { 'name' : 'my-dracula-theme'})
+
+let g:gruvbox_contrast_dark = 'hard'
+colorscheme gruvbox
+set background=dark
 
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
