@@ -75,11 +75,13 @@ set timeoutlen=10000
 "The following are experimental
 "The following line stops cursor blinking
 let &guicursor = substitute(&guicursor, 'n-v-c:', '&blinkon0-', '')
-"set cursorline
+set cursorline
 set nohlsearch
-"set nu
-"set relativenumber
-"set scrolloff=5
+set nu
+set relativenumber
+set sidescroll=1
+set sidescrolloff=10
+set scrolloff=3
 "set scrolloff&
 set noswapfile
 set tabstop=4
