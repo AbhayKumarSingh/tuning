@@ -48,6 +48,7 @@ set smartcase
 set showmatch
 set autoindent
 set ruler
+set diffopt=filler,vertical,foldcolumn:1
 "set vb t_vb=
 "set viminfo+=n$VIM/_viminfo
 "set noerrorbells
