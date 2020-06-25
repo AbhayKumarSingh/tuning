@@ -79,31 +79,9 @@ let &guicursor = substitute(&guicursor, 'n-v-c:', '&blinkon0-', '')
 set nohlsearch
 "set nu
 "set relativenumber
-"------------------
-"The scrolloff option helps to keep context
-"This option possibly causes problem while redrawing the screen when searching
-"and hitting the bottom
 "set scrolloff=5
-"------------------
-"------------------
 "set scrolloff&
-"------------------
-"------------------
-"The following line is to prevent creation of swapfiles during editing.
-"There exists a provision of setting directories for swapfiles etc, so that
-"the editing process does not clutter the current directory. Google it
 set noswapfile
-"------------------
-"------------------
-"The following lines let you go to normal mode by pressing jk and kl
-"simultaneously in insert mode and command mode
-"inoremap jk <Esc>
-"inoremap kj <Esc>
-"cnoremap jk <Esc>
-"cnoremap kj <Esc>
-"------------------
-"------------------
 set tabstop=4
 set shiftwidth=4
 set expandtab
-"------------------
