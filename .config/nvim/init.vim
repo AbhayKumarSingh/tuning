@@ -11,6 +11,9 @@ call minpac#add( 'tpope/vim-unimpaired' )
 call minpac#add( 'tpope/vim-commentary' )
 call minpac#add( 'tpope/vim-surround' )
 call minpac#add( 'tpope/vim-fugitive' )
+call minpac#add( 'tpope/vim-repeat' )
+call minpac#add( 'kana/vim-smartinput' )
+call minpac#add( 'godlygeek/tabular' )
 call minpac#add( 'airblade/vim-gitgutter' )
 call minpac#add( 'tpope/vim-scriptease', { 'type' : 'opt' })
 call minpac#add( 'k-takata/minpac' , { 'type' : 'opt' })
@@ -18,6 +21,28 @@ call minpac#add( 'vim-airline/vim-airline')
 call minpac#add( 'junegunn/fzf', { 'do' : { -> fzf#install()}})
 call minpac#add( 'junegunn/fzf.vim')
 call minpac#add( 'gruvbox-community/gruvbox')
+
+" Custom textobjects
+call minpac#add( 'kana/vim-textobj-user' )
+call minpac#add( 'kana/vim-textobj-entire' )
+call minpac#add( 'kana/vim-textobj-indent' )
+call minpac#add( 'kana/vim-textobj-syntax' )
+call minpac#add( 'Julian/vim-textobj-variable-segment' )
+call minpac#add( 'bkad/CamelCaseMotion' )
+call minpac#add( 'b4winckler/vim-angry' )
+
+" JavaScript
+call minpac#add( 'pangloss/vim-javascript' )
+
+" Plugins for either Vim8 or NeoVim
+if has('nvim')
+  " call minpac#add('Shougo/denite.nvim', {})
+  call minpac#add('machakann/vim-highlightedyank', {})
+  " call minpac#add('kassio/neoterm', {'type': 'opt'})
+  " call minpac#add('Shougo/neomru.vim', {'type': 'opt'})
+else
+  " call minpac#add('Shougo/unite.vim', {'type': 'opt'})
+endif
 
 let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox
@@ -92,3 +117,6 @@ if has('nvim')
   tnoremap <M-k> <c-\><c-n><c-w>k
   tnoremap <M-l> <c-\><c-n><c-w>l
 endif
+
+let g:mapleader=' '
+let g:camelcasemotion_key = '<leader>'
