@@ -73,7 +73,6 @@ if has('autocmd')
 endif
 set nobackup
 set timeoutlen=10000
-"The following are experimental
 "The following line stops cursor blinking
 let &guicursor = substitute(&guicursor, 'n-v-c:', '&blinkon0-', '')
 set cursorline
@@ -83,7 +82,6 @@ set relativenumber
 set sidescroll=1
 set sidescrolloff=10
 set scrolloff=3
-"set scrolloff&
 set noswapfile
 set tabstop=4
 set shiftwidth=4

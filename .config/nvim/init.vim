@@ -2,12 +2,6 @@ set runtimepath+=~/.vim,~/.vim/after
 set packpath+=~/.vim
 source ~/.vimrc
 
-"Set Color Scheme and Font Options
-"Remember to comment the next two lines when installing
-"dracula plugin for the first time. And once installed
-"uncomment those lines. Todo: manage this automatically
-"packadd! my-dracula-theme
-"colorscheme dracula
 set guifont=Consolas:h12
 
 packadd minpac
@@ -24,7 +18,6 @@ call minpac#add( 'vim-airline/vim-airline')
 call minpac#add( 'junegunn/fzf', { 'do' : { -> fzf#install()}})
 call minpac#add( 'junegunn/fzf.vim')
 call minpac#add( 'gruvbox-community/gruvbox')
-" call minpac#add( 'dracula/vim', { 'name' : 'my-dracula-theme'})
 
 let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox
