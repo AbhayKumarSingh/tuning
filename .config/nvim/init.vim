@@ -30,6 +30,7 @@ call minpac#add( 'kana/vim-textobj-syntax' )
 call minpac#add( 'Julian/vim-textobj-variable-segment' )
 call minpac#add( 'bkad/CamelCaseMotion' )
 call minpac#add( 'b4winckler/vim-angry' )
+call minpac#add( 'saihoooooooo/vim-textobj-space' )
 
 " JavaScript
 call minpac#add( 'pangloss/vim-javascript' )
